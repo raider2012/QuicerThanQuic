@@ -15,7 +15,7 @@ Steps :
 8. pip install . //INSTALLS AIOQUIC IN LOCAL ENV
 9. Place server side code and client side code
 10. Run Server: python3 new_server.py --host 0.0.0.0 --port 4433 --cert server_cert.pem --key server_key.pem --video ../video/sample_video.mp4
-11. Run Client: python3 new_client.py --host SERVER_IP_HERE --port 4433 --cert client_cert.pem --key client_key.pem --output downloaded_video.mp4
+11. Run Client: python3 new_client.py --host SERVER_IP_HERE --port 4433 --cert client_cert.pem --key client_key.pem --output downloaded_video.mp4 / Or run monitor_perf.py -> captures CPU utilization and download duration over [10,50] Mbps Bandwidths.
 
 Can make use of two separate machines 1 runnning server and another running Client.
 Be sure to place server/ and client/ inside aioquic/ so that imports are handled properly.
